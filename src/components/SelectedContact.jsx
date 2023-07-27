@@ -12,7 +12,7 @@ export default function SelectedContact({
     async function fetchSelectedContact() {
       try {
         const response = await fetch(
-          `https://jsonplace-univclone.herokuapp.com/users/${selectedContactId}`
+            `https://fsa-jsonplaceholder-69b5c48f1259.herokuapp.com/users${selectedContactId}`
         );
         const contact = await response.json();
         setContact(contact);
